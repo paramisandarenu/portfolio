@@ -1,0 +1,192 @@
+
+html { scroll-behavior: smooth; }
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #F3F4F6;
+    color: #111827;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    position: sticky;
+    top: 0;
+    background: #1E3A8A;
+    padding: 18px 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    z-index: 1000;
+}
+.navbar a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.3s;
+}
+.navbar a:hover {
+    color: #FBBF24;
+    transform: scale(1.07);
+}
+
+/* ===== SECTIONS ===== */
+.section { padding: 80px 10%; }
+
+/* ===== HOME ===== */
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding-top: 100px;
+}
+.hero img {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    border: 6px solid #1E3A8A;
+}
+.hero-text h1 { font-size: 45px; color: #1E3A8A; margin: 0; }
+.hero-text h1 span { color: #FBBF24; }
+.hero-text p { font-size: 18px; color: #374151; }
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #FBBF24;
+    color: #1E3A8A;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.btn:hover { background: #B45309; }
+
+/* SOCIAL ICONS */
+.social-icons { margin-top: 15px; }
+.social-icons a {
+    color: #1E3A8A;
+    margin-right: 15px;
+    font-size: 24px;
+    transition: 0.3s;
+}
+.social-icons a:hover { color: #FBBF24; }
+
+/* ===== HEADINGS ===== */
+#about h2, #projects h2, #skills h2, #hobbies h2 {
+    font-size: 32px;
+    color: #1E3A8A;
+    border-left: 6px solid #FBBF24;
+    padding-left: 15px;
+    margin-bottom: 25px;
+}
+
+/* ==== ABOUT ==== */
+.about-container{
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    flex-direction: column;
+}
+
+.about-card{
+    background: #FFFFFF;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #D1D5DB;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+/* ===== PROJECT CARDS ===== */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+.card {
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #D1D5DB;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.card:hover { transform: translateY(-6px); border-color: #FBBF24; }
+.card h3 { color: #1E3A8A; margin-top: 0; }
+
+/* ===== SKILLS ===== */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+.skill-card {
+    background: #FFFFFF;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #D1D5DB;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+.skill-card:hover { transform: translateY(-6px); border-color: #FBBF24; }
+.skill-card h3 { color: #1E3A8A; margin-top: 0; }
+.skill-card ul { list-style: none; padding-left: 0; }
+.skill-card li {
+    margin: 8px 0;
+    padding-left: 24px;
+    position: relative;
+}
+.skill-card li::before {
+    content: "•";
+    color: #FBBF24;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* ==== HOBBIES =====*/
+.hobby-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 15px;
+}
+
+.hobby-card{
+    background: #FFFFFF;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #D1D5DB;
+    transition: 0.3s;
+    font-weight: 500;
+    
+}
+
+.hobby-card:hover{
+    transform: translateY(-5px);
+    border-color: #FBBF24;
+    cursor: pointer;
+}
+
+
+
+/* ===== CONTACT ===== */
+.contact a { text-decoration: none; color: #1E3A8A; font-weight: 500; }
+.contact a:hover { color: #FBBF24; }
+
+/* ===== FOOTER ===== */
+.footer {
+    text-align: center;
+    background: #1E3A8A;
+    color: white;
+    padding: 18px;
+    margin-top: 50px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+    .hero { flex-direction: column; text-align: center; }
+    .hero img { margin-bottom: 20px; }
+}
